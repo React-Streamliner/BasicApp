@@ -5,12 +5,14 @@ import './styles/styles.css';
 import Header from './components/header';
 import NewsList from "./components/news_list";
 import JSON from './db.json';
+import Footer from "./components/footer";
 
 
 class App extends Component {
 
     state = {
-        news: JSON
+        news: JSON,
+        footerText: 'I am a happy footer.',
     }
     
     render() {
@@ -20,6 +22,7 @@ class App extends Component {
                 <NewsList
                     news={this.state.news}
                 />
+                <Footer footerText={this.state.footerText}/>
             </div>
         )
     }
