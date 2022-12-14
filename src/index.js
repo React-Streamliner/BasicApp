@@ -20,8 +20,10 @@ class App extends Component {
             <div>
                 <Header/>
                 <NewsList
-                    news={this.state.news}
-                />
+                    news={this.state.news}>
+                    <br/>
+                    <div>I am children!</div>
+                </NewsList>
                 <Footer footerText={this.state.footerText}/>
             </div>
         )
