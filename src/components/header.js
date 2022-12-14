@@ -23,14 +23,8 @@ class Header extends Component {
     render() {
         return (
             <header>
-                <div className="logo" onClick={() => console.log('I was clicked')}>Logo</div>
+                <div className="logo" onClick={() => console.log('I was clicked')}>Code News:</div>
                 <input onChange={this.inputChange}/>
-                <br/>
-                <div>{this.state.title}</div>
-                <div>{this.state.keywords}</div>
-                <br/>
-                <div>{this.state.count}</div>
-                <button onClick={() => this.addOne()}>Add One</button>
             </header>
         )
     }
